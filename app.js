@@ -6,24 +6,25 @@ class App {
         window.addEventListener('resize', this.resize.bind(this));
         window.addEventListener('scroll', this.scroll.bind(this));
         this.resize();
+        this.scroll();
     }
 
     resize() {
         this.width = window.innerWidth;
         this.height = window.innerHeight;
 
-        this.blank1 = document.getElementById("blank1");
-        this.blank1.style.width = (this.width - 220) / 2 +'px';
-
-
         this.textVer = document.getElementById("textVer");
         let computedStyle = window.getComputedStyle(this.textVer);
         let textVerH = parseFloat(computedStyle.height);
 
-        this.blank3 = document.getElementById("blank3");
-        this.blank3.style.height = (this.height - textVerH) / 2 +'px';
-        this.blank5 = document.getElementById("blank5");
-        this.blank5.style.height = (this.height - textVerH) / 2 + 60 + 'px';
+        this.hyeon = document.getElementById("hyeon");
+        this.hyeon.style.top = (this.height - textVerH) / 2 +'px';
+        this.gung = document.getElementById("gung");
+        this.gung.style.top = (this.height - textVerH) / 2 + 160 + 'px';
+        this.hyeonCh = document.getElementById("hyeonCh");
+        this.hyeonCh.style.top = (this.height - textVerH) / 2 + 60 + 'px';
+        this.gungCh = document.getElementById("gungCh");
+        this.gungCh.style.top = (this.height - textVerH) / 2 + 220 +'px'
 
 
         console.log(this.width, this.height);
@@ -43,6 +44,14 @@ class App {
             this.bar.style.bottom = "0";
             this.bar.style.top = "unset";
         }
+
+
+        this.slide0 = document.getElementById('slide0');
+        this.slide1 = document.getElementById('slide1');
+        this.slide2 = document.getElementById('slide2');
+        this.slide3 = document.getElementById('slide3');
+        this.slide4 = document.getElementById('slide4');
+        this.slide5 = document.getElementById('slide5');
     }
 }
 
