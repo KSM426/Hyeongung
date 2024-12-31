@@ -1,8 +1,5 @@
 class App {
     constructor() {
-        this.centerWidth = 1000;
-
-        
         window.addEventListener('resize', this.resize.bind(this));
         window.addEventListener('scroll', this.scroll.bind(this));
         this.resize();
@@ -25,6 +22,21 @@ class App {
         this.hyeonCh.style.top = (this.height - textVerH) / 2 + 60 + 'px';
         this.gungCh = document.getElementById("gungCh");
         this.gungCh.style.top = (this.height - textVerH) / 2 + 220 +'px'
+
+        this.paper = document.getElementById("paper");
+
+        if(this.height < 800) {
+            this.paper.style.marginTop = "0px";
+        }
+
+        this.notice = document.getElementById("notice");
+        if(this.width <= 380) {
+            this.notice.style.width = "380px";
+        } else if(this.width > 600) {
+            this.notice.style.width = "600px";
+        } else {
+            this.notice.style.width = this.width + "px";
+        }
 
 
         console.log(this.width, this.height);
@@ -50,8 +62,6 @@ class App {
         this.slide1 = document.getElementById('slide1');
         this.slide2 = document.getElementById('slide2');
         this.slide3 = document.getElementById('slide3');
-        this.slide4 = document.getElementById('slide4');
-        this.slide5 = document.getElementById('slide5');
     }
 }
 

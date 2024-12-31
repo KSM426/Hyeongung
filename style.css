@@ -19,19 +19,21 @@
 }
 
 html {
-	height: 600vh;
+	height: 330vh;
 	width: 100%;
 }
 
 body {
 	font-family: 'Noto Sans KR', sans-serif;
 	
-	height: 600vh;
+	height: 100%;
 	width: 100%;
 	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	background-color: black;
 }
 
 a {
@@ -205,8 +207,6 @@ a {
 	flex-direction: column;
 	align-items: center;
 
-	min-height: 800px;
-
 	background-color: black;
 }
 
@@ -221,7 +221,6 @@ a {
 	color: black;
 
 	background-image: url(resource/hanOk.png);
-	background-position: center;
 	background-size: cover;
 }
 
@@ -284,4 +283,60 @@ a {
 }
 #paperApply:hover {
 	color: rgb(77, 77, 23);
+}
+/**************slide2*****************/
+#notice {
+	width: 380px;
+	/* width: 60%; */
+}
+
+#faqHead {
+	font-family: "Hangeuljaemin4-Regular";
+	font-size: 24px;
+
+
+	margin-top: 60px;
+	margin-bottom: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.set {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	font-size: 19px;
+}
+
+.ques {
+	font-family: "Hangeuljaemin4-Regular";
+	margin-bottom: 5px;
+}
+
+.ans {
+	font-family: "Hangeuljaemin4-Regular";
+}
+
+#noticeApply {
+	width: 100%;
+	text-align: center;
+	font-family: "Hangeuljaemin4-Regular";
+	font-size: 22px;
+}
+/*********************slide3*************/
+#slide3 {
+	height: 30vh;
+	background-color: rgba(20,20,20);
+
+	color:rgb(114, 114, 36);
+
+	font-family: "Hangeuljaemin4-Regular";
+	font-size: 16px;
+	text-align: center;
+}
+
+
+#insta {
+	width: 16px;
+	height: 16px;
 }
